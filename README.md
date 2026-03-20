@@ -16,39 +16,23 @@ This repository contains code for targeted adversarial attacks on vision-languag
 
 \## Repository Structure
 
-```
 
 BLIP2/
-
-&#x20;   blip2 ensemble.ipynb                  # Simple surrogate ensemble
-
-&#x20;   blip2 DI.ipynb                        # Ensemble + input diversity (adv images)
-
-&#x20;   blip2 DI full.ipynb                   # Ensemble + input diversity (ori, tgt, adv)
-
-&#x20;   blip2 DI feature alignment.ipynb      # Full pipeline: ensemble + DI + Deep CCA
-
-Git-base/       # Same structure as BLIP2/
-
-Img2Prompt/     # Same structure as BLIP2/
-
-Kosmos2/        # Same structure as BLIP2/
-
-OFA-base/       # Same structure as BLIP2/
-
-Tag2Text/       # Same structure as BLIP2/
-
-UniDiffuser/    # Same structure as BLIP2/
-
+	blip2 ensemble.ipynb              # Simple surrogate ensemble
+	blip2 DI.ipynb                    # Ensemble + input diversity (adv images)
+	blip2 DI full.ipynb               # Ensemble + input diversity (ori, tgt, adv)
+	blip2 DI feature alignment.ipynb  # Full pipeline: ensemble + DI + Deep CCA
+Git-base/    # Same structure as BLIP2/
+Img2Prompt/  # Same structure as BLIP2/
+Kosmos2/     # Same structure as BLIP2/
+OFA-base/    # Same structure as BLIP2/
+Tag2Text/    # Same structure as BLIP2/
+UniDiffuser/ # Same structure as BLIP2/
 deepCCA/
+	deepmcca_256_with_scalers_and_encoders.pkl  # Pretrained Deep CCA weights
+image generation.ipynb  # Inference: generate target images
+train MLP.ipynb         # Train MLP with Deep CCA
 
-&#x20;   deepmcca\_256\_with\_scalers\_and\_encoders.pkl  # Pretrained Deep CCA weights
-
-image generation.ipynb      # Inference: generate target images
-
-train MLP.ipynb             # Train MLP with Deep CCA
-
-```
 
 
 
