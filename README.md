@@ -50,23 +50,15 @@ train MLP.ipynb         # Train MLP with Deep CCA
 
 
 
+## Pretrained Weights
+
 Download the following weights and upload to Kaggle as a dataset before running notebooks.
 
-
-
-| Model | Purpose | Download |
-
-|-------|---------|----------|
-
-| ClipCap | Surrogate model | \[Google Drive](https://drive.google.com/file/d/1IdaBtMSvtyzF0ByVaBHtvM0JYSXRExRX) |
-
-| BLIP (base) | Surrogate model | \[Salesforce](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model\_base.pth) |
-
-| BLIP (large) | Surrogate model | \[Salesforce](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model\_base\_capfilt\_large.pth) |
-
-| BEiT-3 | Surrogate model | \[GitHub Release](https://github.com/addf400/files/releases/download/beit3/beit3\_large\_patch16\_384\_coco\_retrieval.pth) |
-
-| Tag2Text | Target model | \[Hugging Face](https://huggingface.co/spaces/xinyu1205/recognize-anything/blob/main/tag2text\_swin\_14m.pth) |
+- **ClipCap** (surrogate): [Google Drive](https://drive.google.com/file/d/1IdaBtMSvtyzF0ByVaBHtvM0JYSXRExRX)
+- **BLIP base** (surrogate): [Salesforce](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base.pth)
+- **BLIP large** (surrogate): [Salesforce](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_capfilt_large.pth)
+- **BEiT-3** (surrogate): [GitHub Release](https://github.com/addf400/files/releases/download/beit3/beit3_large_patch16_384_coco_retrieval.pth)
+- **Tag2Text** (target): [Hugging Face](https://huggingface.co/spaces/xinyu1205/recognize-anything/blob/main/tag2text_swin_14m.pth)
 
 
 
