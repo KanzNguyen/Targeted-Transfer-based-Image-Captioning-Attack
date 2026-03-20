@@ -31,6 +31,7 @@ deepCCA/
     deepmcca_256_with_scalers_and_encoders.pkl  # Pretrained Deep CCA weights
 image generation.ipynb  # Inference: generate target images
 train MLP.ipynb         # Train MLP with Deep CCA
+genetic algorithm.ipynb # Define helper functions for GA-based surrogate subset optimization
 ```
 
 ## Datasets
