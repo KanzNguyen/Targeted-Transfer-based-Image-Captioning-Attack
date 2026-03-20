@@ -16,7 +16,7 @@ This repository contains code for targeted adversarial attacks on vision-languag
 
 \## Repository Structure
 
-
+```
 BLIP2/
 	blip2 ensemble.ipynb              # Simple surrogate ensemble
 	blip2 DI.ipynb                    # Ensemble + input diversity (adv images)
@@ -32,7 +32,7 @@ deepCCA/
 	deepmcca_256_with_scalers_and_encoders.pkl  # Pretrained Deep CCA weights
 image generation.ipynb  # Inference: generate target images
 train MLP.ipynb         # Train MLP with Deep CCA
-
+```
 
 
 
