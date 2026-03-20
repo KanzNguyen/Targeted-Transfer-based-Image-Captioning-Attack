@@ -9,7 +9,7 @@
 This repository contains code for targeted adversarial attacks on vision-language models (VLMs) in image captioning tasks. This project extends the **Chain-of-Attack** framework by integrating:
 * **GA-optimized surrogate ensembles**
 * **Input diversity**
-* **Deep CCA-based common space embedding** to maximize transferability against black-box VLM targets.
+* **Deep CCA-based common space embedding**.
 
 ---
 
