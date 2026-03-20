@@ -2,21 +2,15 @@
 
 
 
-Thesis project — VNU-HCM University of Information Technology. 
+Thesis project — VNU-HCM University of Information Technology.
 
 
 
 \## Overview
 
-This repository contains code for targeted adversarial attacks on 
 
-vision-language models (VLMs) in image captioning tasks. This project 
 
-extends the Chain-of-Attack framework by integrating GA-optimized surrogate 
-
-ensembles, input diversity, and Deep CCA-based common space embedding 
-
-to maximize transferability against black-box VLM targets.
+This repository contains code for targeted adversarial attacks on vision-language models (VLMs) in image captioning tasks. This project extends the Chain-of-Attack framework by integrating GA-optimized surrogate ensembles, input diversity, and Deep CCA-based common space embedding to maximize transferability against black-box VLM targets.
 
 
 
@@ -26,39 +20,41 @@ to maximize transferability against black-box VLM targets.
 
 BLIP2/
 
-&#x20;   blip2 ensemble.ipynb          # Simple surrogate ensemble
+&#x20;   blip2 ensemble.ipynb                  # Simple surrogate ensemble
 
-&#x20;   blip2 DI.ipynb                # Ensemble + input diversity (adv images)
+&#x20;   blip2 DI.ipynb                        # Ensemble + input diversity (adv images)
 
-&#x20;   blip2 DI full.ipynb           # Ensemble + input diversity (ori, tgt, adv)
+&#x20;   blip2 DI full.ipynb                   # Ensemble + input diversity (ori, tgt, adv)
 
-&#x20;   blip2 DI feature alignment.ipynb  # Full pipeline: ensemble + DI + Deep CCA
+&#x20;   blip2 DI feature alignment.ipynb      # Full pipeline: ensemble + DI + Deep CCA
 
-Git-base/                         # Same structure as BLIP2/
+Git-base/       # Same structure as BLIP2/
 
-Img2Prompt/                       # Same structure as BLIP2/
+Img2Prompt/     # Same structure as BLIP2/
 
-Kosmos2/                          # Same structure as BLIP2/
+Kosmos2/        # Same structure as BLIP2/
 
-OFA-base/                         # Same structure as BLIP2/
+OFA-base/       # Same structure as BLIP2/
 
-Tag2Text/                         # Same structure as BLIP2/
+Tag2Text/       # Same structure as BLIP2/
 
-UniDiffuser/                      # Same structure as BLIP2/
+UniDiffuser/    # Same structure as BLIP2/
 
 deepCCA/
 
 &#x20;   deepmcca\_256\_with\_scalers\_and\_encoders.pkl  # Pretrained Deep CCA weights
 
-image generation.ipynb            # Inference: generate target images
+image generation.ipynb      # Inference: generate target images
 
-train MLP.ipynb                   # Train MLP with Deep CCA
+train MLP.ipynb             # Train MLP with Deep CCA
 
 ```
 
 
 
 \## Datasets
+
+
 
 \- \*\*Test images (1k subset)\*\*: \[Kaggle Dataset](https://www.kaggle.com/datasets/sealeopard/1k-images)
 
@@ -67,6 +63,8 @@ train MLP.ipynb                   # Train MLP with Deep CCA
 
 
 \## Pretrained Weights
+
+
 
 Download the following weights and upload to Kaggle as a dataset before running notebooks.
 
@@ -90,6 +88,8 @@ Download the following weights and upload to Kaggle as a dataset before running 
 
 \## Running the Notebooks
 
+
+
 All notebooks are designed to run on \*\*Kaggle\*\* (free GPU).
 
 
@@ -105,6 +105,8 @@ All notebooks are designed to run on \*\*Kaggle\*\* (free GPU).
 
 
 \## Acknowledgements
+
+
 
 This project implements and extends the attack pipeline described in:
 
