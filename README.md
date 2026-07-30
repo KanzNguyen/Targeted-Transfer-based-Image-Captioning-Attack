@@ -19,7 +19,7 @@ This repository contains code for targeted adversarial attacks on vision-languag
 The full pipeline below illustrates how these techniques are combined into a single attack framework.
 
 <p align="center">
-  <img src="docs/full pipeline.png" width="65%"><br>
+  <img src="docs/full pipeline.png" width="70%"><br>
   <em>Full pipeline illustrating all the techniques integrated within the scope of this work.</em>
 </p>
 
