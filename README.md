@@ -12,14 +12,14 @@ This repository contains code for targeted adversarial attacks on vision-languag
 * **Deep CCA-based common space embedding**.
 
 <p align="center">
-  <img src="docs/adversarial_attack.png" width="70%"><br>
+  <img src="docs/adversarial_attack.png" width="55%"><br>
   <em>Comparison between adversarial attacks on the image classification task and the image captioning task.</em>
 </p>
 
 The full pipeline below illustrates how these techniques are combined into a single attack framework.
 
 <p align="center">
-  <img src="docs/full_pipeline.png" width="95%"><br>
+  <img src="docs/full_pipeline.png" width="78%"><br>
   <em>Full pipeline illustrating all the techniques integrated within the scope of this work.</em>
 </p>
 
@@ -28,8 +28,8 @@ The full pipeline below illustrates how these techniques are combined into a sin
 ## Qualitative Results
 
 <p align="center">
-  <img src="docs/qualitative1.png" width="100%"><br>
-  <img src="docs/qualitative2.png" width="100%"><br>
+  <img src="docs/qualitative1.png" width="75%"><br>
+  <img src="docs/qualitative2.png" width="75%"><br>
   <em>Illustration of several attack cases on the GIT-base model under an attack budget of ε = 8/255.</em>
 </p>
 
