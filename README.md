@@ -6,7 +6,9 @@
 
 ## Overview
 
-This repository contains code for targeted adversarial attacks on vision-language models (VLMs) in image captioning tasks. This project extends the **Chain-of-Attack** framework by integrating:
+This work uses a targeted attack framework as a tool to **evaluate the robustness** of vision-language models (VLMs) in image captioning: a more effective attack exposes model weaknesses more thoroughly, so attack strength serves as a robustness probe.
+
+The repository implements a targeted adversarial attack that extends the **Chain-of-Attack** framework by integrating:
 * **GA-optimized surrogate ensembles**
 * **Input diversity**
 * **Deep CCA-based common space embedding**.
