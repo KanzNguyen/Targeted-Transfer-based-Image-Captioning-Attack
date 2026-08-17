@@ -12,14 +12,14 @@ This repository contains code for targeted adversarial attacks on vision-languag
 * **Deep CCA-based common space embedding**.
 
 <p align="center">
-  <img src="docs/adversarial attack.png" width="60%"><br>
+  <img src="docs/adversarial_attack.png" width="60%"><br>
   <em>Comparison between adversarial attacks on the image classification task and the image captioning task.</em>
 </p>
 
 The full pipeline below illustrates how these techniques are combined into a single attack framework.
 
 <p align="center">
-  <img src="docs/full pipeline.png" width="70%"><br>
+  <img src="docs/full_pipeline.png" width="70%"><br>
   <em>Full pipeline illustrating all the techniques integrated within the scope of this work.</em>
 </p>
 
@@ -39,10 +39,10 @@ The full pipeline below illustrates how these techniques are combined into a sin
 
 ```text
 BLIP2/
-    blip2 ensemble.ipynb               # Simple surrogate ensemble
-    blip2 DI.ipynb                     # Ensemble + input diversity (adv images)
-    blip2 DI full.ipynb                # Ensemble + input diversity (ori, tgt, adv)
-    blip2 DI feature alignment.ipynb   # Full pipeline: ensemble + DI + Deep CCA
+    blip2_ensemble.ipynb               # Simple surrogate ensemble
+    blip2_DI.ipynb                     # Ensemble + input diversity (adv images)
+    blip2_DI_full.ipynb                # Ensemble + input diversity (ori, tgt, adv)
+    blip2_DI_feature_alignment.ipynb   # Full pipeline: ensemble + DI + Deep CCA
 Git-base/    # Same structure as BLIP2/
 Img2Prompt/  # Same structure as BLIP2/
 Kosmos2/     # Same structure as BLIP2/
@@ -51,9 +51,9 @@ Tag2Text/    # Same structure as BLIP2/
 UniDiffuser/ # Same structure as BLIP2/
 deepCCA/
     deepmcca_256_with_scalers_and_encoders.pkl  # Pretrained Deep CCA weights
-image generation.ipynb  # Inference: generate target images
-train MLP.ipynb         # Train MLP with Deep CCA
-genetic algorithm.ipynb # Define helper functions for GA-based surrogate subset optimization
+image_generation.ipynb  # Inference: generate target images
+train_MLP.ipynb         # Train MLP with Deep CCA
+genetic_algorithm.ipynb # Define helper functions for GA-based surrogate subset optimization
 ```
 
 ## Datasets
