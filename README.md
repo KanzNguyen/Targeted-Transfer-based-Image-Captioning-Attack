@@ -27,6 +27,38 @@ The full pipeline below illustrates how these techniques are combined into a sin
 
 ---
 
+## Models
+ 
+This work involves two groups of models: the **surrogate ensemble**
+(used to craft the attack) and the **victim models** (black-box targets). The four CLIP
+backbones inside the surrogate ensemble are additionally reused to score results.
+ 
+### Surrogate ensemble — used to optimize the targeted perturbation
+The genetic algorithm selects an attack-specific subset from these surrogates. Most are used
+purely as **feature extractors** for embedding alignment; a few are also **captioning-capable**
+and can act as captioning surrogates.
+ 
+| Role | Models |
+|---|---|
+| CLIP backbones | `CLIP-ViT-B/32`, `CLIP-RN101`, `CLIP-ViT-B/16`, `CLIP-ViT-L/14` |
+| Captioning-capable surrogates | `BLIP` (Salesforce), `ClipCap` (built on CLIP-ViT-B/32), `CoCa` (`coca_ViT-L-14`, `pretrained="mscoco_finetuned_laion2B-s13B-b90k"`, OpenCLIP) |
+| Other vision-language encoders | `ALBEF` (Salesforce), `BEiT-3`, `ALIGN` (`kakaobrain/align-base`), `SigLIP` (`google/siglip-base-patch16-256`) |
+ 
+Note: all surrogates contribute image/text embeddings; captioning-capable ones (BLIP, ClipCap,
+CoCa) also generate captions to add supplementary text embeddings for perturbation optimization.
+ 
+### Victim models (6) — black-box captioners the attack targets
+`Img2Prompt`, `BLIP-2`, `GIT-base`, `OFA-base`, `Tag2Text`, `Kosmos2`.
+These generate captions and are treated as black boxes (input/output access only, no internal access).
+ 
+### Evaluation — CLIP Score
+The four CLIP backbones in the surrogate ensemble (`RN101`, `ViT-B/16`, `ViT-B/32`, `ViT-L/14`)
+are **reused** to measure target-caption CLIP Score in the Results table below. The score is
+computed with **all four backbones and averaged** (the **Ensemble** column is the mean over the
+four). 
+
+---
+
 ## Repository Structure
 
 ```text
