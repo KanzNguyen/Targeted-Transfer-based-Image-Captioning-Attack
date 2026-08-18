@@ -58,7 +58,7 @@ genetic_algorithm.ipynb # Define helper functions for GA-based surrogate subset 
 ## Results
 
 Targeted-attack effectiveness measured by **CLIP Score (↑)** at ε = 16/255, across six
-black-box victim VLMs and four surrogate backbones (the **Ensemble** column is the mean over
+black-box victim VLMs and four CLIP evaluation backbones (the **Ensemble** column is the mean over
 the four). Rows per VLM: **Clean Image** (no attack) and **ClipCap** (baseline) are
 references; **Ens**, **Ens + DI**, and **Ens + DI + deepCCA** are this work's configurations.
 Bold marks the best configuration per column.
